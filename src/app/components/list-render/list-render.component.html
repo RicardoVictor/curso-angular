@@ -2,6 +2,13 @@
   <p>list-render works!</p>
   <h3>Lista</h3>
   <ul>
-    <li *ngFor="let item of items">{{ item }}</li>
+    <li *ngFor="let animal of animals">
+      <p>Name: {{ animal.name }} - Tipo: {{ animal.type }}</p>
+      <button (click)="animal.changeShowAge()">
+        <p *ngIf="animal.showAge; else mostrarIdade">Esconder idade</p>
+        <ng-template #mostrarIdade>Mostrar idade</ng-template>
+      </button>
+      <p *ngIf="animal.showAge">Idade: {{ animal.age }} anos.</p>
+    </li>
   </ul>
 </div>
