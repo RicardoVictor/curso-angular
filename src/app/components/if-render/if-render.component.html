@@ -1,0 +1,14 @@
+<div class="lesson">
+  <p>if-render works!</p>
+  <div *ngIf="">testando ngIf</div>
+
+  <div *ngIf="show; else cantShow">
+      <p>É verdadeiro</p>
+  </div>
+  <ng-template #cantShow>
+      <div>
+          <p>É falso</p>
+      </div>
+  </ng-template>
+
+</div>

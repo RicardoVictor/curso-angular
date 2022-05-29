@@ -1,0 +1,10 @@
+<div class="lesson">
+  <p>eventos works!</p>
+  <button (click)="showMessage()">
+    <p *ngIf="show; else esconderMensagem">Esconder mensagem</p>
+    <ng-template #esconderMensagem>
+      <p>Mostrar mensagem</p>
+    </ng-template>
+  </button>
+  <p *ngIf="show">Exibindo mensagem...</p>
+</div>
