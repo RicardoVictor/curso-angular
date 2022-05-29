@@ -9,6 +9,7 @@
         <ng-template #mostrarIdade>Mostrar idade</ng-template>
       </button>
       <p *ngIf="animal.showAge">Idade: {{ animal.age }} anos.</p>
+      <button (click)="removeAnimal(animal)">Excluir</button>
     </li>
   </ul>
 </div>
