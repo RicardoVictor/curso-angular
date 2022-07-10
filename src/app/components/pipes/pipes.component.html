@@ -1,7 +1,8 @@
 <div class="lesson">
   <p>pipes works!</p>
-  <p>{{ someText | uppercase }}</p>
-  <p>{{ someText | lowercase }}</p>
-  <p>{{ someText | titlecase }}</p>
-  <p>{{ someDate | date: "fullDate" }}</p>
+  <p>{{ "uppercase" | uppercase }}</p>
+  <p>{{ "lowercase" | lowercase }}</p>
+  <p>{{ "title case" | titlecase }}</p>
+  <p><b>Data Original</b>: {{ someDate }}</p>
+  <p><b>FullDate</b>:{{ someDate | date: "fullDate" }}</p>
 </div>

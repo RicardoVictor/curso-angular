@@ -13,6 +13,6 @@ export class EventosComponent implements OnInit {
   ngOnInit(): void {}
 
   showMessage(): void {
-    this.show = !this.show; // toggle: trabalhar c o inverso do valor, assim nao é preciso criar dois eventos
+    this.show = !this.show; // toggle (trabalhar c o inverso do valor)
   }
 }
